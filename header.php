@@ -21,7 +21,7 @@
         </form>
         <div class="nav-panel">
             <p><a href="#">Strona główna</a></p>
-            <p><a href="#">O nas</a></p>
+            <p><a href="#">Wszystkie posty</a></p>
         </div>
         <div class="buttons">
             <button>Sign up</button>
