@@ -83,9 +83,9 @@ li {
 
 main {
     background: rgb(224, 214, 190);
-    padding: 40px;
     color: white;
     width: 100%;
+    text-align: center;
 }
 
 main h2 {
@@ -103,17 +103,42 @@ main h2 {
 }
 
 .post-card {
-    margin: 10px;
+    margin: 24px;
+    align-items: center;
     background-color: #1f1f8a;
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    min-width: 400px;
     height: 300px;
+    
+}
+.post-card img {
+    width: 100%;
+    height: auto;
 }
 
 .post-title {
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+/* Article page */
+
+.article-card {
+    display: flex;
+    flex-direction: row;
+    background:#1f1f8a;
+    margin: 40px;
+}
+
+.article-card img {
+    flex: 1;
+    min-width: 100px;
+}
+
+.article-text {
+    flex: 3;
 }
 
 /* Footer */
