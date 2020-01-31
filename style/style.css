@@ -141,29 +141,29 @@ footer {
     
 }
 .container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
     background-color: rgb(22, 20, 20);
     padding: 20px;
 }
 
-.footer-panel {
-    flex: 1;
-    margin:0;
-    padding: 0;
-    align-items: center;
+.container ul {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 .footer-panel:first-child {
     border-right: solid 1px #888;
 }
 
 .footer-panel-item {
-    width: 25%;
+    width: 30%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     font-size: 22px;
-    margin-top: 10px;
     border: 1px solid #111;
 }
 .footer-panel-item:hover {
@@ -248,18 +248,68 @@ footer {
 }
 
 @media (min-width: 360px) {
+    /* main */
     .latest-posts {
         grid-template-columns: 1fr ;
+    }
+    /* footer  */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .container ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        padding: 0;
+    }
+    .footer-panel:first-child {
+        border-right:none;
+    }
+    .footer-panel-item {
+        width: 100%;
+        margin-left: 0;
     }
 }
 
 @media (min-width: 768px) {
+    /* main */
     .latest-posts {
         grid-template-columns: 1fr 1fr;
     }
+    /* footer */
+    .container ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
 }
 @media (min-width: 1024px) {
+    /* main */
     .latest-posts {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    /* footer */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 20px;
+    }
+    .container ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .footer-panel:first-child {
+        border-right: solid 1px #888;
+    }
+    
+    .footer-panel-item {
+        width: 30%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
