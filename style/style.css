@@ -25,11 +25,13 @@ a:link, a:visited, a:active {
     color: white;
 }
 
-/* Header */
-
 hr {
     width: 90%;
 }
+
+/* Header */
+
+
 nav {
     display: flex;
     align-items: center;
@@ -245,3 +247,19 @@ footer {
     
 }
 
+@media (min-width: 360px) {
+    .latest-posts {
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media (min-width: 768px) {
+    .latest-posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1024px) {
+    .latest-posts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
