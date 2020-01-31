@@ -4,7 +4,6 @@
     <div class="container">
         <div class="footer-panel">
             <ul>
-                <li><h4>Social media</h4></li>
                 <li><a href="#"><div class="footer-panel-item">
                     <div class="fa fa-facebook"></div>
                     <div class="facebook">Facebook</div>
@@ -21,7 +20,6 @@
         </div>
         <div class="footer-panel">
             <ul>
-                <li><h4>Kontakt</h4></li>
                 <li><a href="#"><div class="footer-panel-item">
                     <div class="fa fa-google"></div>
                     <div class="google">Google</div>

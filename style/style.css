@@ -96,31 +96,19 @@ main h2 {
 }
 
 .latest-posts {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 .post-card {
-    margin: 24px;
-    align-items: center;
-    background-color: #1f1f8a;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    min-width: 400px;
-    height: 300px;
-    
-}
-.post-card img {
-    width: 100%;
-    height: auto;
+    background: #1f1f8a;
+    margin: 20px;
 }
 
-.post-title {
-    text-overflow: ellipsis;
-    overflow: hidden;
+.post-card img {
+    width: 100%;
 }
 
 /* Article page */
@@ -181,7 +169,7 @@ footer {
 }
 
 .facebook {
-    background-color: #3B5998;
+    background: #3B5998;
     flex: 4;
 }
 
@@ -256,3 +244,4 @@ footer {
     background-color: rgb(22, 20, 20);
     
 }
+
