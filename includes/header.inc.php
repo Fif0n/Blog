@@ -12,19 +12,19 @@
 <body>
 
 <nav>
-        <header class="logo">
-            <a href="/blog/index.php"><h1>Logo</h1></a>
-        </header>
-        <form class="search">
-            <input type="text" placeholder="Szukaj artykułów...">
-            <button>Szukaj</button>
-        </form>
-        <div class="nav-panel">
-            <a href="/blog/index.php"><p>Strona główna</p></a>
-            <a href="includes/allArticles.inc.php"><p>Wszystkie posty</p></a>
-        </div>
-        <div class="buttons">
-            <button>Sign up</button>
-            <button>Sign in</button>
-        </div>
-    </nav>
+    <header class="logo">
+        <a href="/blog/index.php"><h1>Logo</h1></a>
+    </header>
+    <form class="search">
+        <input type="text" placeholder="Szukaj artykułów...">
+        <button>Szukaj</button>
+    </form>
+    <div class="nav-panel">
+        <a href="/blog/index.php"><p>Strona główna</p></a>
+        <a href="includes/allArticles.inc.php"><p>Wszystkie posty</p></a>
+    </div>
+    <div class="buttons">
+        <button>Sign up</button>
+        <button>Sign in</button>
+    </div>
+</nav>
