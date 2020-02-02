@@ -11,13 +11,18 @@
 </head>
 <body>
 
+<button class="hamburger">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+</button>
 <nav>
     <header class="logo">
         <a href="/blog/index.php"><h1>Logo</h1></a>
     </header>
     <form class="search">
         <input type="text" placeholder="Szukaj artykułów...">
-        <button>Szukaj</button>
+        <button class="fa fa-search"></button>
     </form>
     <div class="nav-panel">
         <a href="/blog/index.php"><p>Strona główna</p></a>

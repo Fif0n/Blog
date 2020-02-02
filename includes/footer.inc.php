@@ -42,5 +42,6 @@
     
 </footer>
 
+<script src="/blog/js/main.js"></script>
 </body>
 </html>
