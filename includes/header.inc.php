@@ -30,6 +30,18 @@
     </div>
     <div class="buttons">
         <button>Sign up</button>
-        <button>Sign in</button>
+        <button id="login">Log in</button>
     </div>
 </nav>
+
+<div class="login-popup">
+    <div class="login-content">
+        <div class="x">&times;</div>
+        <h1>Login</h1>
+        <form action="">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+        </form>
+    </div>
+</div>
