@@ -22,7 +22,7 @@ nav button {
     background-color: #4c4cc0;
     color: white;
     height: 30px;
-    width: 80px;
+    width: 100px;
     -webkit-box-shadow: 13px 10px 20px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 13px 10px 20px -4px rgba(0,0,0,0.75);
     box-shadow: 13px 10px 20px -4px rgba(0,0,0,0.75);
@@ -159,6 +159,7 @@ li {
     border: 2px #76a8e2 solid;
 }
 
+
 /* main */
 
 main {
@@ -209,6 +210,36 @@ main h2 {
     flex: 3;
 }
 
+/* Register page */
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 120px 50px 120px;
+    text-align: left;
+    color: #111;
+}
+.register input {
+    width: 40%;
+    margin: 10px 0 10px 0;
+    border: 0;
+    border-bottom: 2px #111 solid;
+    height: 24px;
+    background: transparent;
+}
+.register input:focus {
+    border-bottom: 2px #76a8e2 solid;
+}
+.register button {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38px;
+    border: 2px #111 solid;
+    margin-top: 30px;
+}
+.register button:hover {
+    border: 2px #76a8e2 solid;
+}
 /* Footer */
 
 footer {

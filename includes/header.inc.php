@@ -29,19 +29,19 @@
         <a href="includes/allArticles.inc.php"><p>Wszystkie posty</p></a>
     </div>
     <div class="buttons">
-        <button>Sign up</button>
-        <button id="login">Log in</button>
+        <a href="/blog/includes/register.inc.php"><button>Rejestruj się</button></a>
+        <button id="login">Zaloguj się</button>
     </div>
 </nav>
 
 <div class="login-popup">
     <div class="login-content">
         <div class="x">&times;</div>
-        <h1>Login</h1>
+        <h1>Logowanie</h1>
         <form action="">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button>Login</button>
+            <input type="text" placeholder="Nazwa użytkownika">
+            <input type="password" placeholder="Hasło">
+            <button>Zaloguj się</button>
         </form>
     </div>
 </div>
