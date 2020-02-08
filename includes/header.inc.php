@@ -1,5 +1,6 @@
 <?php 
     include_once 'dbh.inc.php';
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,21 +31,32 @@
     <div class="nav-panel">
         <a href="/blog/index.php"><p>Strona główna</p></a>
         <a href="includes/allArticles.inc.php"><p>Wszystkie posty</p></a>
+
     </div>
-    <div class="buttons">
-        <a href="/blog/includes/register.inc.php"><button>Rejestruj się</button></a>
-        <button id="login">Zaloguj się</button>
-    </div>
+    <?php if(isset($_SESSION['id'])){
+        echo "<div class='buttons'>
+            <h4>Zalogowany jako: ".$_SESSION['username']."</h4>
+            <form action='includes/logout.inc.php' method='POST'>
+                <button type='submit' name='logout-submit'>Wyloguj</button>
+        </div>";
+    } else {
+        echo '<div class="buttons">
+            <a href="/blog/includes/register.inc.php"><button>Rejestruj się</button></a>
+            <button id="login">Zaloguj się</button>
+        </div>';
+    }
+        
+    ?>
 </nav>
 
 <div class="login-popup">
     <div class="login-content">
         <div class="x">&times;</div>
         <h1>Logowanie</h1>
-        <form action="">
-            <input type="text" placeholder="Nazwa użytkownika">
-            <input type="password" placeholder="Hasło">
-            <button>Zaloguj się</button>
+        <form action="includes/login.inc.php" method="POST">
+            <input type="text" name="username" placeholder="Nazwa użytkownika">
+            <input type="password" name="password" placeholder="Hasło">
+            <button type="submit" name="login-submit">Zaloguj się</button>
         </form>
     </div>
 </div>

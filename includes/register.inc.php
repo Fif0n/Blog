@@ -15,7 +15,6 @@
         <input type="password" name="password-repeat">
         <button type="submit" name="signup-submit">Rejestruj</button>
     </form>
-    <p><?php echo $errors ?></p>
 </main>
 
 <?php 

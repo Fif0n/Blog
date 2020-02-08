@@ -38,7 +38,7 @@ nav {
     grid-template-columns: 10% 1fr 1fr 1fr 20%;
     grid-template-rows: 1fr;
     grid-template-areas: "logo search search nav-panel buttons";
-
+    color: #fff;
 }
 
 .logo {
@@ -66,7 +66,6 @@ nav {
 .search button {
     width: 10%;
     background-color: transparent;
-    color: #fff;
     border: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -86,7 +85,6 @@ nav {
 .nav-panel p {
     padding: 10px;
     border: 1px solid rgb(22, 20, 20);
-    color: white;
     background-color: #5e5ef7;
 }
 .nav-panel p:hover {
@@ -97,6 +95,7 @@ nav {
     grid-area: buttons;
     margin-top: 10px;
     margin-left: 20px;
+    display: flex;
 }
 
 li {
