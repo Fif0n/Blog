@@ -1,6 +1,3 @@
-<?php
-    include_once 'header.inc.php';
-?>
 
 <main>
     <h2>Rejestracja użytkownika</h2>
@@ -17,6 +14,3 @@
     </form>
 </main>
 
-<?php 
-    include_once 'footer.inc.php';
-?>

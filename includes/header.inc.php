@@ -22,26 +22,27 @@
 </button>
 <nav>
     <header class="logo">
-        <a href="/blog/index.php"><h1>Logo</h1></a>
+        <a href="/blog/index/home"><h1>Logo</h1></a>
     </header>
     <form class="search">
         <input type="text" placeholder="Szukaj artykułów...">
         <button class="fa fa-search"></button>
     </form>
     <div class="nav-panel">
-        <a href="/blog/index.php"><p>Strona główna</p></a>
-        <a href="includes/allArticles.inc.php"><p>Wszystkie posty</p></a>
+        <a href="/blog/index/home"><p>Strona główna</p></a>
+        <a href="/blog/index/article"><p>Wszystkie posty</p></a>
 
     </div>
     <?php if(isset($_SESSION['id'])){
         echo "<div class='buttons'>
-            <h4>Zalogowany jako: ".$_SESSION['username']."</h4>
             <form action='includes/logout.inc.php' method='POST'>
                 <button type='submit' name='logout-submit'>Wyloguj</button>
+            </form>
+            <p>Zalogowany jako: ".$_SESSION['username']."</p>
         </div>";
     } else {
         echo '<div class="buttons">
-            <a href="/blog/includes/register.inc.php"><button>Rejestruj się</button></a>
+            <a href="/blog/index/register"><button>Rejestruj się</button></a>
             <button id="login">Zaloguj się</button>
         </div>';
     }

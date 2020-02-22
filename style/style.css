@@ -35,7 +35,7 @@ nav button:hover {
 nav {
     display: grid;
     background-color: #1f1f8a;
-    grid-template-columns: 10% 1fr 1fr 1fr 20%;
+    grid-template-columns: 10% 1fr 1fr 1fr 30%;
     grid-template-rows: 1fr;
     grid-template-areas: "logo search search nav-panel buttons";
     color: #fff;
@@ -93,9 +93,14 @@ nav {
 
 .buttons {
     grid-area: buttons;
-    margin-top: 10px;
-    margin-left: 20px;
-    display: flex;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.buttons p {
+    margin-top: 0;
+    margin: 5px;
+    text-align: center;
 }
 
 li {
