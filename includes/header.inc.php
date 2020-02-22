@@ -35,7 +35,7 @@
     </div>
     <?php if(isset($_SESSION['id'])){
         echo "<div class='buttons'>
-            <form action='includes/logout.inc.php' method='POST'>
+            <form action='/blog/includes/logout.inc.php' method='POST'>
                 <button type='submit' name='logout-submit'>Wyloguj</button>
             </form>
             <p>Zalogowany jako: ".$_SESSION['username']."</p>
@@ -54,7 +54,7 @@
     <div class="login-content">
         <div class="x">&times;</div>
         <h1>Logowanie</h1>
-        <form action="includes/login.inc.php" method="POST">
+        <form action="/blog/includes/login.inc.php" method="POST">
             <input type="text" name="username" placeholder="Nazwa użytkownika">
             <input type="password" name="password" placeholder="Hasło">
             <button type="submit" name="login-submit">Zaloguj się</button>

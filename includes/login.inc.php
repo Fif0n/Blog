@@ -7,7 +7,7 @@ if(isset($_POST['login-submit'])){
     $password = $_POST['password'];
 
     if(empty($username) || empty($password)){
-        header("Location: ../index.php?error=emptyfields");
+        header("Location: /blog/index/home?error=emptyfields");
         exit();
 
     } else {
@@ -15,7 +15,7 @@ if(isset($_POST['login-submit'])){
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("Location: ../index.php?error=sqlerror");
+            header("Location: /blog/index/home?error=sqlerror");
             exit();
 
         } else {
@@ -26,7 +26,7 @@ if(isset($_POST['login-submit'])){
             if($row = mysqli_fetch_assoc($result)){
                 $passwordCheck = password_verify($password, $row['password']);
                 if($passwordCheck == false){
-                    header("Location: ../index.php?error=wrongpassword");
+                    header("Location: /blog/index/home?error=wrongpassword");
                     exit();
 
                 } else if($passwordCheck == true){
@@ -35,22 +35,22 @@ if(isset($_POST['login-submit'])){
                     $_SESSION['username'] = $row['username'];
                     $_SESSION['userRank'] = $row['userRank'];
 
-                    header("Location: ../index.php?login=success");
+                    header("Location: /blog/index/home?login=success");
                     exit();
 
                 } else {
-                    header("Location: ../index.php?error=wrongpassword");
+                    header("Location: /blog/index/home?error=wrongpassword");
                     exit();
                 }
             } else {
-                header("Location: ../index.php?error=nouser");
+                header("Location: /blog/index/home?error=nouser");
                 exit();
 
             }
         }
     }
 } else {
-    header("Location: ../index.php");
+    header("Location: /blog/index/home");
     exit();
 
 }

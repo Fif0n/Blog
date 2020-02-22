@@ -1,7 +1,7 @@
 
 <main>
     <h2>Rejestracja użytkownika</h2>
-    <form action="registerForm.inc.php" class="register" method="POST">
+    <form action="/blog/includes/registerForm.inc.php" class="register" method="POST">
         <label for="username">Nazwa użytkownika:</label>
         <input type="text" name="username">
         <label for="email">E-mail:</label>
