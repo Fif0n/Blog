@@ -6,7 +6,6 @@ $email = '';
 if(isset($_POST['signup-submit'])){
     include_once 'dbh.inc.php';
 
-    $errors = array();
 
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
