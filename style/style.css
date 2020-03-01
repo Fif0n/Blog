@@ -245,6 +245,50 @@ main h2 {
 .register button:hover {
     border: 2px #76a8e2 solid;
 }
+/* Add post */
+.add {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 120px 50px 120px;
+    align-items: center;
+    color: #111;
+    
+}
+.add input {
+    width: 50%;
+    margin: 10px 0 10px 0;
+    border: 0;
+    border-bottom: 2px #111 solid;
+    height: 30px;
+    background: transparent;
+    font-weight: 700;
+    font-size: 16px;
+}
+.add input:focus {
+    border-bottom: 2px #76a8e2 solid;
+}
+.add textarea {
+    border: 2px #111 solid;
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+}
+.add textarea:focus {
+    border: 2px #76a8e2 solid;
+}
+.add button {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    border: 2px #111 solid;
+    margin-top: 30px;
+}
+.add button:focus {
+    border: 2px #76a8e2 solid;
+}
+
+
 /* Footer */
 
 footer {
