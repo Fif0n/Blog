@@ -3,7 +3,7 @@
     <h2>Wszystkie posty</h2>
     <div class="article">
     <?php
-        $sql = "SELECT * FROM blog_post";
+        $sql = "SELECT * FROM blog_post order by id desc";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
             echo 'SQL failed';
