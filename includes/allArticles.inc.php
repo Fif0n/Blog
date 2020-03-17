@@ -12,7 +12,7 @@
             $result = mysqli_stmt_get_result($stmt);
 
             while($row = mysqli_fetch_assoc($result)){
-                echo '<a href="#">
+                echo '<a href="/blog/index/post/'.$row['id'].'">
                         <div class="article-card">
                             <img src="/blog/img/'.$row['imgName'].'">
                             <div class="article-text">

@@ -35,24 +35,24 @@
     </div>
     <div class='buttons'>
 
-    <?php 
-    if(isset($_SESSION['id']) && $_SESSION['userRank'] == 'admin'){
-        echo "<form action='/blog/includes/logout.inc.php' method='POST'>
-                <button type='submit' name='logout-submit'>Wyloguj</button>
-            </form>
-            <p>Zalogowany jako: ".$_SESSION['username']."</p>
-            <a href='/blog/index/add'><button>Dodaj post</button></a>";
-    } else if(isset($_SESSION['id']) && $_SESSION['userRank'] == 'member'){
-        echo "<form action='/blog/includes/logout.inc.php' method='POST'>
-                <button type='submit' name='logout-submit'>Wyloguj</button>
-            </form>
-            <p>Zalogowany jako: ".$_SESSION['username']."</p>";
-    } else {
-        echo '<a href="/blog/index/register"><button>Rejestruj się</button></a>
-            <button id="login">Zaloguj się</button>';
-    }
-        
-    ?>
+        <?php 
+        if(isset($_SESSION['id']) && $_SESSION['userRank'] == 'admin'){
+            echo "<form action='/blog/includes/logout.inc.php' method='POST'>
+                    <button type='submit' name='logout-submit'>Wyloguj</button>
+                </form>
+                <p>Zalogowany jako: ".$_SESSION['username']."</p>
+                <a href='/blog/index/add'><button>Dodaj post</button></a>";
+        } else if(isset($_SESSION['id']) && $_SESSION['userRank'] == 'member'){
+            echo "<form action='/blog/includes/logout.inc.php' method='POST'>
+                    <button type='submit' name='logout-submit'>Wyloguj</button>
+                </form>
+                <p>Zalogowany jako: ".$_SESSION['username']."</p>";
+        } else {
+            echo '<a href="/blog/index/register"><button>Rejestruj się</button></a>
+                <button id="login">Zaloguj się</button>';
+        }
+            
+        ?>
     </div>
 </nav>
 

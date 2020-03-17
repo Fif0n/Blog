@@ -26,7 +26,7 @@ nav button {
     -webkit-box-shadow: 13px 10px 20px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 13px 10px 20px -4px rgba(0,0,0,0.75);
     box-shadow: 13px 10px 20px -4px rgba(0,0,0,0.75);
-    margin:5px;
+    margin:0 10px 0 10px;
     font-weight: 700;
 }
 nav button:hover {
@@ -36,7 +36,7 @@ nav button:hover {
 nav {
     display: grid;
     background-color: #1f1f8a;
-    grid-template-columns: 10% 1fr 1fr 1fr 30%;
+    grid-template-columns: 10% 1fr 1fr 1fr 20%;
     grid-template-rows: 1fr;
     grid-template-areas: "logo search search nav-panel buttons";
     color: #fff;
@@ -94,12 +94,11 @@ nav {
 
 .buttons {
     grid-area: buttons;
-    margin-left: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .buttons p {
-    margin-top: 0;
+    margin-top: 10px;
     margin: 5px;
     text-align: center;
 }
@@ -210,12 +209,46 @@ main h2 {
 
 .article-card img {
     flex: 1;
-    min-width: 100px;
+    width: 300px;
     
 }
 
 .article-text {
     flex: 3;
+}
+
+/* Post */
+
+.post {
+    color: black;
+    margin: 0 15% 0 15%;
+}
+.post-box {
+    margin: 50px 0 50px 0;
+}
+.post img {
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-height: 500px;
+    margin: 50px 0 50px 0;
+}
+hr {
+    width: 100%;
+}
+.post-box p {
+    font-weight: 400;
+    font-size: 22px;
+    
+}
+.author {
+    text-align: left;
+}
+
+.comments {
+    background-color: white;
 }
 
 /* Register page */
@@ -434,12 +467,14 @@ footer {
     }
     .search {
         display: none;
-        padding: 0;
-        margin: 0;
+        padding: 20px 0 0 0 ;
+        
     }
     .search input{
-        width: 85%;
-        text-align: center;
+        width: 80%;
+        margin: 0 20px 0 20px;
+        text-align: left;
+        align-items: center;
     }
     .search button {
         width: 10%;
@@ -530,7 +565,7 @@ footer {
     }
     .nav-active .search{
         display: block;
-        margin: 0 10px 0 10px;
+        margin: 25px 10px 10px 10px;
         padding: 10px 0 10px 0;
     }
     .nav-active .nav-panel{
@@ -571,6 +606,11 @@ footer {
     .article-card img {
         width: 100%;
     }
+    /* Post */
+
+    .post {
+        margin: 0 10% 0 10%;
+    }
     /* footer  */
     .container {
         display: grid;
@@ -596,14 +636,12 @@ footer {
 @media (min-width: 768px) {
     /* header */
     nav {
-        grid-template-columns: 10% 40% 1fr 30%;
+        grid-template-columns: 10% 30% 1fr 30%;
         grid-template-areas: "logo search nav-panel buttons";
         
     }
     .search input {
         width: 65%;
-        border-radius: 10px;
-        height: 24px;
     }
     .logo {
         margin: 10px 0 0 10px;
@@ -612,7 +650,10 @@ footer {
         margin-top: 25px;
     }
     .buttons {
-        margin-top: 20px;
+        margin: auto;
+    }
+    .buttons button {
+        width: 100px;
     }
     /* main */
     main h2 {
@@ -645,13 +686,21 @@ footer {
     }
     .logo {
         margin-left: 20px;
+        margin-top: 0;
     }
     .buttons {
-        margin-top: 25px;
+        margin: 0;
+        
+    }
+    .buttons button{
+        margin: 0 0 0 20px;
     }
     /* main */
     .latest-posts {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .buttons {
+        margin: auto;
     }
     /* footer */
     .container {
@@ -687,6 +736,6 @@ footer {
         width: 80%;
     }
     .buttons {
-        margin-top: 20px;
+        margin: auto;
     }
 }
