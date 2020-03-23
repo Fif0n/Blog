@@ -247,8 +247,32 @@ hr {
     text-align: left;
 }
 
-.comments {
-    background-color: white;
+.comments-section {
+    background-color: rgb(204, 204, 127);
+    padding: 20px 10px 20px 10px;
+    
+}
+.comments-section input {
+    margin: 40px 10px 40px 10px;
+    width: 60%;
+    height: 44px;
+    background-color: rgb(204, 204, 150);
+    border: 2px solid black;
+    font-size: 18px;
+}
+.comments-section button {
+    height: 50px;
+    background-color: rgb(204, 204, 150);
+    border: 2px black solid;
+}
+.comment {
+    background-color: rgb(209, 209, 168);
+    width: 80%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 10px;
 }
 
 /* Register page */
