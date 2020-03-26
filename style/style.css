@@ -40,6 +40,9 @@ nav {
     grid-template-rows: 1fr;
     grid-template-areas: "logo search search nav-panel buttons";
     color: #fff;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0 10px 0;
 }
 
 .logo {
@@ -81,6 +84,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    position: sticky;
 }
 
 .nav-panel p {
@@ -168,6 +172,7 @@ li {
 
 main {
     background: rgb(224, 214, 190);
+    margin-top: 80px;
     color: white;
     width: 100%;
     text-align: center;
@@ -255,13 +260,13 @@ hr {
 .comments-section input {
     margin: 40px 10px 40px 10px;
     width: 60%;
-    height: 44px;
+    height: 48px;
     background-color: rgb(204, 204, 150);
     border: 2px solid black;
     font-size: 18px;
 }
 .comments-section button {
-    height: 50px;
+    height: 40px;
     background-color: rgb(204, 204, 150);
     border: 2px black solid;
 }
@@ -273,6 +278,7 @@ hr {
     margin-right: auto;
     text-align: left;
     padding: 10px;
+    border: 1px solid #111;
 }
 
 /* Register page */
