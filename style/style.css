@@ -116,7 +116,7 @@ li {
 /* login popup */
 
 .login-popup {
-    position: absolute;
+    position: fixed;
     display: none;
     background: rgba(0,0,0,0.6);
     width: 100%;
@@ -279,6 +279,13 @@ hr {
     text-align: left;
     padding: 10px;
     border: 1px solid #111;
+}
+.needLogin {
+    background-color: #ce2828;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e21111;
 }
 
 /* Register page */
