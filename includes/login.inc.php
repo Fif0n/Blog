@@ -31,7 +31,7 @@ if(isset($_POST['login-submit'])){
 
                 } else if($passwordCheck == true){
                     session_start();
-                    $_SESSION['id'] = $row['id'];
+                    $_SESSION['userID'] = $row['userID'];
                     $_SESSION['username'] = $row['username'];
                     $_SESSION['userRank'] = $row['userRank'];
 

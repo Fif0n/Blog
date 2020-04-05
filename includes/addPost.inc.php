@@ -42,12 +42,11 @@
                         } else {
                             mysqli_stmt_execute($stmt);
                             $result = mysqli_stmt_get_result($stmt);
-                            
-                            $sql = "INSERT INTO blog_post (title, content, author, imgName) VALUES (?, ?, ?, ?);";
+                            $sql = "INSERT INTO blog_post (userID, title, content, imgName) VALUES (?, ?, ?, ?);";
                             if(!mysqli_stmt_prepare($stmt, $sql)){
-                                echo 'SQL failed';
+                                echo 'SQL failed2';
                             } else {
-                                mysqli_stmt_bind_param($stmt, 'ssss', $title, $content, $_SESSION['username'], $imgFullName);
+                                mysqli_stmt_bind_param($stmt, 'ssss', $_SESSION['userID'], $title, $content, $imgFullName);
                                 mysqli_stmt_execute($stmt);
 
                                 move_uploaded_file($fileTempName, $fileDestination);
