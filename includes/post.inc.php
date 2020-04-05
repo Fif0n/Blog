@@ -2,7 +2,7 @@
     <div class="post">
         <?php
             $id = $_GET['id'];
-            $sql = "SELECT * FROM blog_post WHERE id='$id'";
+            $sql = "SELECT p.title, p.content, p.imgName, u.username FROM blog_post AS p, blog_user AS u WHERE postID='$id'";
             $stmt = mysqli_stmt_init($conn);
             if(!mysqli_stmt_prepare($stmt, $sql)){                     
                 echo 'SQL failed';
@@ -13,7 +13,7 @@
                 while($row = mysqli_fetch_assoc($result)){
                     echo '<div class="post-box">
                             <h1>'.$row['title'].'</h1>
-                            <p class="author">Autor: '.$row['author'].'</p>
+                            <p class="author">Autor: '.$row['username'].'</p>
                             <hr/>
                             <img src="/blog/img/'.$row['imgName'].'"/>
                             <p>'.$row['content'].'</p>
@@ -22,7 +22,7 @@
                 }
                 echo '<h2>Komentarze</h2>
                         <div class="comments-section">';
-                        if(isset($_SESSION['id'])){
+                        if(isset($_SESSION['userID'])){
                             echo '<form>
                                 <input type="text" name="comment" placeholder="Dodaj komentarz jako '.$_SESSION['username'].'">
                                 <button type="submit" name="comment-submit">Dodaj komentarz</button>
@@ -32,7 +32,7 @@
                                     <h4>Musisz się zalogować aby dodać kometarz</h4>
                                 </div>';
                         } 
-                            echo '<div class="comment">
+                        echo '<div class="comment">
                                 <p>Ktoś napisał:</p>
                                 <h4>lorem ipsum elo benc pozdro 6000000000000000000000000000000000 xd. Wisz o co chodzi mordooooo.</h3>
                             </div>
