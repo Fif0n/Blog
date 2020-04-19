@@ -28,6 +28,7 @@ nav button {
     box-shadow: 13px 10px 20px -4px rgba(0,0,0,0.75);
     margin:0 10px 0 10px;
     font-weight: 700;
+
 }
 nav button:hover {
     background-color: #3b3bb0;
@@ -43,6 +44,7 @@ nav {
     position: fixed;
     width: 100%;
     padding: 10px 0 10px 0;
+    z-index: 1;
 }
 
 .logo {
@@ -280,6 +282,15 @@ hr {
     padding: 10px;
     border: 1px solid #111;
 }
+
+.comment .x {
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 97%;
+    font-weight: 700;
+    font-size: 22px;
+}
 .needLogin {
     background-color: #ce2828;
     width: 40%;
@@ -306,6 +317,7 @@ hr {
 }
 .register input:focus {
     border-bottom: 2px #76a8e2 solid;
+    outline: 0;
 }
 .register button {
     width: 40%;
